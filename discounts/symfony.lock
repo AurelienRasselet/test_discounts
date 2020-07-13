@@ -144,6 +144,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.17.1"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.17.1"
+    },
     "symfony/routing": {
         "version": "5.1",
         "recipe": {
@@ -162,6 +165,9 @@
         "version": "v2.1.2"
     },
     "symfony/string": {
+        "version": "v5.1.2"
+    },
+    "symfony/uid": {
         "version": "v5.1.2"
     },
     "symfony/var-dumper": {

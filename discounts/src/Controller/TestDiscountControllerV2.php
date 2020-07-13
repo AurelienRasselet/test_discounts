@@ -47,22 +47,12 @@ class TestDiscountControllerV2 extends AbstractController
 
 
     /**
-     * @Route("/v2/getDiscounts/{userId}/{groupId}/{productId}/{categoryId}/{price}", name="get_discounts_v2")
+     * @Route("/v2/getDiscounts", name="get_discounts_v2")
      */
-    public function getPromoMysql(int $userId, int $groupId, int $productId, int $categoryId, string $price)
+    public function getPromoMysql()
     {
-        $productIds = [];
-        $categoryId = [];
-        $price = [];
-
-        /*for ($i = 0; $i < 100; $i++) {
-            $productIds[] = $i;
-            $categoryId[] = 1;
-            $price[] = 15;
-        }*/
-
         $result = $this->testMySqlService->getProductDiscounts();
-//print_r($result);
+
         return $this->json($result);
     }
 }
